@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_11"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:onClick="validarCebolla"
+                app:srcCompat="@drawable/cebolla" />
+
+            <ImageView
+                android:id="@+id/iv_12"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="validarQueso"
+                app:srcCompat="@drawable/queso" />
+
+            <ImageView
+                android:id="@+id/iv_13"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:onClick="validarMayonesa"
+                app:srcCompat="@drawable/mayonesa" />
+
+            <ImageView
+                android:id="@+id/iv_14"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="validarPanAbajo"
+                app:srcCompat="@drawable/pan_abajo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_21"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="validarHongos"
+                app:srcCompat="@drawable/hongo" />
+
+            <ImageView
+                android:id="@+id/iv_22"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:onClick="validarLechuga"
+                app:srcCompat="@drawable/lechuga" />
+
+            <ImageView
+                android:id="@+id/iv_23"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:onClick="jamonsote"
+                app:srcCompat="@drawable/empaque_jamon" />
+
+            <ImageView
+                android:id="@+id/iv_24"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:onClick="validarMostaza"
+                app:srcCompat="@drawable/mostaza" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_31"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                android:onClick="validarSalsa"
+                app:srcCompat="@drawable/salsa_tomate" />
+
+            <ImageView
+                android:id="@+id/iv_32"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:onClick="validarPanArriba"
+                app:srcCompat="@drawable/pan_arriba" />
+
+            <ImageView
+                android:id="@+id/iv_33"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                android:onClick="validarTomate"
+                app:srcCompat="@drawable/tomate" />
+
+            <ImageView
+                android:id="@+id/iv_34"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:onClick="validarPepinillo"
+                app:srcCompat="@drawable/pepinillo" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

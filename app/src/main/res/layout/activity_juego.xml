@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Juego">
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/fondo_juego" />
+
+        <include
+            layout="@layout/cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="160dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_checkPanArriba"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/iv_checkMostaza"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/iv_checkCebolla"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/iv_checkTomate"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/iv_checkJamon"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="435dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/iv_checkQueso"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/iv_checkLechuga"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/iv_checkPanBajo"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/check" />
+
+    <TextView
+        android:id="@+id/tv_tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginBottom="1100dp"
+        android:text="Tiempo: 40s"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_jamonGrande"
+        android:layout_width="596dp"
+        android:layout_height="515dp"
+        android:layout_marginBottom="350dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/jamon" />
+
+    <ImageView
+        android:id="@+id/iv_jamonsote"
+        android:layout_width="745dp"
+        android:layout_height="635dp"
+        android:layout_marginTop="300dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/empaque_jamon" />
+
+    <Switch
+        android:id="@+id/btn_swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="270dp"
+        android:checked="true"
+        android:onClick="validarSwitch"
+        android:switchMinWidth="700dp"
+        android:thumb="@drawable/deslizar"
+        android:trackTint="#00FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        tools:checked="false" />
+
+    <ImageView
+        android:id="@+id/iv_panBajo"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1000dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/pan_abajo" />
+
+    <ImageView
+        android:id="@+id/iv_lechuga"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="980dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lechuga" />
+
+    <ImageView
+        android:id="@+id/iv_queso"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="970dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/queso" />
+
+    <ImageView
+        android:id="@+id/iv_jamon"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="940dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/jamon" />
+
+    <ImageView
+        android:id="@+id/iv_tomate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="900dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/tomate" />
+
+    <ImageView
+        android:id="@+id/iv_cebolla"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="890dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/cebolla" />
+
+    <ImageView
+        android:id="@+id/iv_mostaza"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="880dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/mostaza" />
+
+    <ImageView
+        android:id="@+id/iv_panArriba"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="835dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/pan_arriba" />
+
+    <ImageView
+        android:id="@+id/iv_xPepinillo"
+        android:layout_width="161dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/equis" />
+
+    <ImageView
+        android:id="@+id/iv_xSalsa"
+        android:layout_width="161dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="600dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/equis" />
+
+    <ImageView
+        android:id="@+id/iv_xMayonesa"
+        android:layout_width="161dp"
+        android:layout_height="139dp"
+        android:layout_marginBottom="670dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/equis" />
+
+    <ImageView
+        android:id="@+id/iv_xHongos"
+        android:layout_width="161dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="600dp"
+        android:layout_marginBottom="380dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/equis" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
